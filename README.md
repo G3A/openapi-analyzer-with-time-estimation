@@ -1,57 +1,102 @@
-# Lea atentamente
+# 🚀 Analizador OpenAPI con Estimación de Tiempo
 
-Esta aplicación avanzada ha sido diseñada para realizar un análisis exhaustivo y estructurado de aplicaciones legacy. Su misión principal es ofrecer una comprensión clara y detallada de los servicios que integran el sistema existente, lo cual es esencial para planificar mejor las futuras mejoras o migraciones tecnológicas.
+# ¡Descubre el Poder de la Visión Clara en tus Aplicaciones Legacy!
 
-Utilizando el archivo openapi.yaml, que es un estándar de descripción de APIs, mi herramienta identifica automáticamente cada servicio y operación descrito. Luego, proporciona una evaluación precisa y detallada de la complejidad de cada uno, clasificada según distintos niveles de prueba posible.
+¿Te enfrentas a la ardua tarea de comprender y modernizar aplicaciones complejas y heredadas? ¡No estás solo! Nuestra herramienta está aquí para transformar esa complejidad en claridad, permitiéndote tomar decisiones informadas y estratégicas.
 
-Estas evaluaciones van acompañadas de estimaciones en horas que se basan en el tipo y complejidad de la prueba requerida para cada servicio. Esto permite a los equipos de desarrollo y gestión de proyectos calcular con mayor precisión los esfuerzos necesarios para comprender, probar y eventualmente modificar o actualizar el sistema.
+**¿Qué Hacemos?**
 
-La aplicación no solo facilita la toma de decisiones informadas, sino que también agiliza el proceso inicial de exploración y evaluación de aplicaciones legacy, contribuyendo a una gestión más eficiente y estratégica de proyectos de tecnología.
+Analizamos a fondo tus aplicaciones legacy utilizando el estándar OpenAPI (a través de tu archivo `openapi.yaml`). Desglosamos cada servicio y operación, proporcionándote una evaluación detallada de su complejidad y el esfuerzo necesario para probarlo y modernizarlo.
 
-## Prerrequisitos:
+**¿Por Qué es Importante?**
 
-1. Poner la dependencia y plugin encargados de generar el  archivo openapi.yaml en su archivo pom.xml
-   
-```maven
+*   **Planificación Inteligente:** Obtén estimaciones precisas en horas para las pruebas de cada servicio, lo que te permite planificar y asignar recursos de manera eficiente.
+*   **Toma de Decisiones Informada:** Comprende a fondo la complejidad de tu sistema, facilitando la toma de decisiones sobre mejoras, migraciones y actualizaciones.
+*   **Ahorro de Tiempo y Recursos:** Acelera el proceso de exploración y evaluación inicial, evitando costosos errores y retrasos.
+*   **Colaboración Mejorada:** Facilita la comunicación entre equipos de desarrollo y gestión de proyectos al proporcionar una visión clara y compartida del sistema.
+
+**¿Cómo Funciona?**
+
+Nuestra herramienta utiliza tu archivo `openapi.yaml` para identificar y analizar cada servicio y operación en tu aplicación. Luego, aplica una metodología de evaluación de complejidad basada en los tipos de prueba requeridos, generando estimaciones de tiempo precisas.
+
+**¡Comienza Hoy Mismo!**
+
+## 🔍 Descripción
+
+Esta potente herramienta está diseñada para **analizar aplicaciones legacy** de forma exhaustiva, proporcionando:
+
+- 📊 Identificación automática de servicios y operaciones
+- 🏷️ Clasificación por niveles de complejidad
+- ⏱️ Estimaciones precisas de tiempo para pruebas
+- 📈 Información estratégica para migraciones
+
+**Beneficios clave:**
+✅ Acelera la evaluación de sistemas legacy  
+✅ Facilita la planificación de proyectos  
+✅ Optimiza la asignación de recursos  
+
+## ⚙️ Instalación Rápida
+
+### Prerrequisitos
+1. Configura tu `pom.xml`:
+
+```xml
+<!-- Dependencia -->
 <dependency>
-	<groupId>io.smallrye</groupId>
-	<artifactId>smallrye-open-api-jaxrs</artifactId>
-	<version>2.3.1</version> 
+    <groupId>io.smallrye</groupId>
+    <artifactId>smallrye-open-api-jaxrs</artifactId>
+    <version>2.3.1</version> 
 </dependency>
-```
-   
-```maven 
+
+<!-- Plugin -->
 <plugin>
-	<groupId>io.smallrye</groupId>
-	<artifactId>smallrye-open-api-maven-plugin</artifactId>
-	<version>2.3.1</version> 
-	<executions>
-		<execution>
-			<goals>
-				<goal>generate-schema</goal>
-			</goals>
-		</execution>
-	</executions>
+    <groupId>io.smallrye</groupId>
+    <artifactId>smallrye-open-api-maven-plugin</artifactId>
+    <version>2.3.1</version> 
+    <executions>
+        <execution>
+            <goals>
+                <goal>generate-schema</goal>
+            </goals>
+        </execution>
+    </executions>
 </plugin>
 ```
-2. Ejecutar el comando maven   (Asegure que tiene seteado la versión del JDK correcto)
 
+2. Genera el archivo OpenAPI:
 ```bash
-    mvn clean package
-```	
+mvn clean package
+```
 
+## 🚀 Cómo Usar
 
-## Modo de uso:
-
-1. Abre una ventana cmd en la ruta donde está el archivo index.js 
-2. Asegúrate de instalar las librerías:
-
+1. Instala dependencias:
 ```bash
-    npm i
-```	
+npm i
+```
 
-3. Ejecútalo desde la terminal:
-
+2. Ejecuta el analizador:
 ```bash
-    node index.js ruta/a/tu/openapi.yml
-```	
+node index.js ruta/a/tu/openapi.yml
+```
+
+## 📊 Resultados Esperados
+
+La herramienta generará un reporte detallado que incluye:
+
+- 🔎 Listado completo de servicios
+- 🧮 Estimación de horas por tipo de prueba
+- 📌 Recomendaciones de priorización
+- 📅 Planificación sugerida
+
+## 🤝 Contribuciones
+
+¡Contribuciones son bienvenidas! Por favor abre un issue o envía un PR.
+
+---
+
+📌 **Nota:** Asegúrate de tener configurada la versión correcta de JDK antes de ejecutar.
+
+💡 **Tip:** Usa los resultados para planificar sprints más eficientes!
+
+
