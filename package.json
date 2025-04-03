@@ -1,0 +1,14 @@
+{
+  "name": "openapi_analyzer_time_es",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "acorn": "^8.14.1",
+    "acorn-walk": "^8.3.4",
+    "js-yaml": "^4.1.0",
+    "uuid": "^11.1.0"
+  }
+}
